@@ -126,7 +126,6 @@ var $navbar = $('.navbar');
 var $title = $('h1');
 
 $window.scroll(function () {
-    console.log($('h1').offset());
     if ($body.scrollTop() > $title.offset().top - 100) {
         $navbar.removeClass('transparent');
     } else {
@@ -138,7 +137,6 @@ try{
     console.log('Oh zut, des logs');
     console.log('Rejoignez nous pour coder le monde !');
 }catch(er){
-
 }
 </script>
 </body>
