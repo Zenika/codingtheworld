@@ -104,7 +104,7 @@ h1 {
     color: white;
     text-align: center;
     margin-top: 80%;
-    font-size: 46px;
+    font-size: 30px;
     margin-bottom: 25px;
 }
 
@@ -119,7 +119,7 @@ a.join, a.join:visited, a.join:hover, a.join:focus {
     border-radius: 10px;
     background-color: #b31835;
     font-family: 'Monofonto-Regular';
-    font-size: 42px;
+    font-size: 26px;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -128,6 +128,12 @@ a.join, a.join:visited, a.join:hover, a.join:focus {
 
 a.join:hover {
     color: #de95a3;
+}
+
+@media (min-width: 450px) {
+    a.join {
+        font-size: 42px;
+    }
 }
 
 blockquote {
@@ -145,25 +151,29 @@ blockquote {
     border-left: none;
 }
 
-blockquote::before, blockquote::after {
+blockquote p{
+    position: relative;
+}
+
+blockquote p::before, blockquote p::after {
     font-family: Georgia, serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
 }
 
-blockquote::before {
+blockquote p::before {
     content: "\201C";
     position: absolute;
-    left: 20px;
+    left: 0px;
     top: -12px;
 }
 
-blockquote::after {
+blockquote p::after {
     content: "\201D";
     position: absolute;
-    right: 18px;
-    bottom: 4px;
+    right: 0px;
+    bottom: -32px;
 }
 
 blockquote div {
