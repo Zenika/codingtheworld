@@ -131,7 +131,7 @@ a.join:hover {
 }
 
 @media (min-width: 450px) {
-    a.join {
+    a.join, a.join:visited, a.join:hover, a.join:focus {
         font-size: 42px;
     }
 }
